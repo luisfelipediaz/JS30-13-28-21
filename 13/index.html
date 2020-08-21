@@ -58,6 +58,16 @@
       };
     }
 
+    // Obtenemos las imagenes
+    const sliderImages = document.querySelectorAll('.slide-in');
+
+    function checkSlide(event) {
+      console.log(event);
+    }
+
+    // Probamos el debounce
+    document.addEventListener('scroll', debounce(checkSlide, 2000, false));
+
   </script>
 
   <style>
